@@ -52,6 +52,23 @@
     <!-- Custom scripts for all pages-->
     <script src="<?= base_url('assets'); ?>/js/sb-admin-2.min.js"></script>
 
+    <!-- Page level plugins -->
+    <script src="<?= base_url('assets'); ?>/vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="<?= base_url('assets'); ?>/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="<?= base_url('assets'); ?>/js/demo/datatables-demo.js"></script>
+
+    <script>
+            $('.custom-file-input').on('change',function(){
+                //get the file name
+                // var fileName = $(this).val();
+                var fileName = $(this).val().replace('C:\\fakepath\\', " ");
+                //replace the "Choose a file" label
+                $(this).next('.custom-file-label').html(fileName);
+            })
+    </script>
+
 </body>
 
 </html>

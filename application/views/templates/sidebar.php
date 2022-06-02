@@ -32,6 +32,13 @@
                 Users
             </div>
 
+            <!-- Nav Item - Barang -->
+            <li class="nav-item">
+                <a class="nav-link" href="<?= base_url('barang'); ?>">
+                    <i class="far fa-address-card"></i>
+                    <span>Data Barang</span></a>
+            </li>
+
             <!-- Nav Item - Profil -->
             <li class="nav-item">
                 <a class="nav-link" href="<?= base_url('user'); ?>">
